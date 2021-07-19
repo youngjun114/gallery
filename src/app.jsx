@@ -1,5 +1,6 @@
 import About from './components/about/about';
 import Banner from './components/banner/banner';
+import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Jumbotron from './components/jumbotron/jumbotron';
 import Pricing from './components/pricing/pricing';
@@ -16,6 +17,7 @@ function App() {
       <Service />
       <Jumbotron />
       <Pricing />
+      <Footer />
     </>
   );
 }
