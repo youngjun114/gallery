@@ -1,8 +1,8 @@
 @import '../../styles/global.css';
 
-.about {
+.service {
   text-align: center;
-  padding: 10%;
+  padding: 10% 2.5%;
 }
 
 .title {
@@ -24,13 +24,15 @@
   margin: 0.5em auto 1.5em auto;
 }
 
-.desc {
-  font-size: 1.2rem;
-  line-height: 2.7rem;
+@media (min-width: 576px) {
 }
-
+@media (min-width: 768px) {
+}
 @media (min-width: 992px) {
-  .about {
-    padding: 10% 25%;
+  .cards {
+    display: flex;
+    justify-content: center;
   }
+}
+@media (min-width: 1200px) {
 }

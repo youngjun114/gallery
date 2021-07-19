@@ -3,15 +3,18 @@
   --color-font-primary-black: #000;
   --color-font-primary-white: #fff;
   --color-font-secondary-red: #f32222;
+  --color-font-secondary-grey: #7f8183;
   --color-horizontal-line: #dfe1e3;
   --color-overlay: rgba(2, 16, 23, 0.75);
   --color-mobile-background: #f6f6f6;
   --color-image-hover: rgba(12, 18, 21, 0.9);
+  --color-card-border: #dfe1e3;
 
   --font-family-oswald: 'Oswald', sans-serif;
   --font-family-roboto: 'Roboto', sans-serif;
 
   --header-height: 7rem;
+  --content-header-font-size: 2.4rem;
 
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;

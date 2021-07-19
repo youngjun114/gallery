@@ -11,7 +11,7 @@
 }
 
 .header {
-  font-size: 2.4rem;
+  font-size: var(--content-header-font-size);
 }
 
 .header::after {
@@ -57,10 +57,13 @@
   visibility: visible;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .image_grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
@@ -68,5 +71,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 @media (min-width: 1200px) {
 }

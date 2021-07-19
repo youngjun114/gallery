@@ -3,7 +3,7 @@
 .banner {
   background-color: var(--color-mobile-background);
   display: flex;
-  height: 50vh;
+  height: 30vh;
   padding: 10%;
 }
 
