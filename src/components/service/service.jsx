@@ -10,7 +10,7 @@ const Service = () => {
       <h1 className={styles.header}>MULTIPLE OFFER WE PROVIDE</h1>
       <div className={styles.cards}>
         {cards.map((card) => {
-          return <ServiceCard ket={card.id} card={card} />;
+          return <ServiceCard key={card.id} card={card} />;
         })}
       </div>
     </section>

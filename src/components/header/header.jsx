@@ -20,31 +20,33 @@ const Header = () => {
             WOO<span className={styles.title_red}>P</span>OSE
           </h1>
         </div>
-        {expandMenu && (
-          <ul className={styles.menu}>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>Home</button>
-            </li>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>About</button>
-            </li>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>Gallery</button>
-            </li>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>Services</button>
-            </li>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>Pages</button>
-            </li>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>Blog</button>
-            </li>
-            <li className={styles.menu_item}>
-              <button className={styles.btn_item}>Contact</button>
-            </li>
-          </ul>
-        )}
+        <ul
+          className={
+            expandMenu ? `${styles.menu} ${styles.menu_show}` : styles.menu
+          }
+        >
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>Home</button>
+          </li>
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>About</button>
+          </li>
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>Gallery</button>
+          </li>
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>Services</button>
+          </li>
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>Pages</button>
+          </li>
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>Blog</button>
+          </li>
+          <li className={styles.menu_item}>
+            <button className={styles.btn_item}>Contact</button>
+          </li>
+        </ul>
         <div className={styles.header_right}>
           <button className={styles.btn_menu} onClick={handleClick}>
             <GiHamburgerMenu className={styles.icon} />

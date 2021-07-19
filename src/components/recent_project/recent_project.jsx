@@ -10,9 +10,8 @@ const RecentProject = () => {
       <div className={styles.image_grid}>
         {images.map((image) => {
           return (
-            <div className={styles.image_container}>
+            <div key={image.id} className={styles.image_container}>
               <div className={styles.overlay}>{image.label}</div>
-
               <img
                 className={styles.image}
                 src={image.imagePath}
