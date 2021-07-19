@@ -2,6 +2,8 @@
 
 .image_container {
   position: relative;
+  min-height: 275px;
+  max-height: 1294.92px;
 }
 
 .image {
@@ -24,9 +26,16 @@
 
 .title {
   font-size: 3.5rem;
+  text-align: center;
   margin-bottom: 1em;
 }
 
 .desc {
   font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .overlay {
+    height: 100%;
+  }
 }
