@@ -1,0 +1,25 @@
+@import '../../styles/global.css';
+
+.pricing {
+  text-align: center;
+  padding: 10% 2.5%;
+}
+
+.title {
+  color: var(--color-font-secondary-red);
+  margin-bottom: 2em;
+}
+
+.header {
+  font-size: var(--content-header-font-size);
+}
+
+.header::after {
+  display: block;
+  content: '';
+  height: 2px;
+  max-width: 20rem;
+  background-color: var(--color-horizontal-line);
+  text-align: center;
+  margin: 0.5em auto 1.5em auto;
+}
