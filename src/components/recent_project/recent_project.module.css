@@ -1,0 +1,72 @@
+@import '../../styles/global.css';
+
+.projects {
+  padding: 2.5%;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-font-secondary-red);
+  margin-bottom: 2em;
+}
+
+.header {
+  font-size: 2.4rem;
+}
+
+.header::after {
+  display: block;
+  content: '';
+  height: 2px;
+  max-width: 20rem;
+  background-color: var(--color-horizontal-line);
+  text-align: center;
+  margin: 0.5em auto 1.5em auto;
+}
+
+.image_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.image_container {
+  position: relative;
+  transition: 250ms ease-in;
+}
+
+.image {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--color-image-hover);
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  width: 90%;
+  height: 90%;
+  transform: translate(5%, 5%);
+}
+
+.image_container:hover .overlay {
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .image_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .image_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+}

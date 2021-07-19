@@ -1,0 +1,36 @@
+@import '../../styles/global.css';
+
+.about {
+  text-align: center;
+  padding: 10%;
+}
+
+.title {
+  color: var(--color-font-secondary-red);
+  margin-bottom: 2em;
+}
+
+.header {
+  font-size: 2.4rem;
+}
+
+.header::after {
+  display: block;
+  content: '';
+  height: 2px;
+  max-width: 20rem;
+  background-color: var(--color-horizontal-line);
+  text-align: center;
+  margin: 0.5em auto 1.5em auto;
+}
+
+.desc {
+  font-size: 1.2rem;
+  line-height: 2.7rem;
+}
+
+@media (min-width: 992px) {
+  .about {
+    padding: 10% 25%;
+  }
+}
